@@ -74,7 +74,21 @@ class Member{
         return $book -> returnBook();
     }
 }
+// Create 2 books with the following properties
+$bookOne = new Book("The Great Gatsby",  5);
+$bookTwo = new Book("To Kill a Mockingbird", 3);
 
+// Create 2 members with the following properties
+$memberOne = new Member("John Doe");
+$memberTwo = new Member("Jane Smith");
+
+// Apply Borrow book method to each member
+$memberOne -> borrowBook($bookOne);
+$memberTwo -> borrowBook($bookTwo);
+
+// Print Available Copies with their names
+echo "Available Copies of ". $bookOne -> getTitle(). " :"  . $bookOne -> getAvailableCopies() . "<br>";
+echo "Available Copies of ". $bookTwo -> getTitle(). ": " . $bookTwo -> getAvailableCopies() . "<br>";
 
 
 ?>
