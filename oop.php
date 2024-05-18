@@ -87,8 +87,8 @@ $memberOne -> borrowBook($bookOne);
 $memberTwo -> borrowBook($bookTwo);
 
 // Print Available Copies with their names
-echo "Available Copies of ". $bookOne -> getTitle(). " :"  . $bookOne -> getAvailableCopies() . "<br>";
-echo "Available Copies of ". $bookTwo -> getTitle(). ": " . $bookTwo -> getAvailableCopies() . "<br>";
+echo "Available Copies of '{$bookOne -> getTitle()}' : {$bookOne -> getAvailableCopies()}<br>";
+echo "Available Copies of '{$bookTwo -> getTitle()}' : {$bookTwo -> getAvailableCopies()}<br>";
 
 
 ?>
